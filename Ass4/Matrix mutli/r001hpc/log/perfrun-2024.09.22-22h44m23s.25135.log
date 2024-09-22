@@ -1,0 +1,126 @@
+2 [138326646754176] INFO perfrun.launcher <> - Launcher main begin
+4 [138326646754176] INFO perfrun.launcher <> - MessageCatalogInit finished
+4 [138326646754176] INFO perfrun.launcher <> - Launcher instance created
+4 [138326646754176] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/oneapi/vtune/2024.3/bin64/amplxe-runss --ui-output-format xml --ui-output-fd 14 --option-file /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/config/runsa.options 
+324 [138326646754176] INFO perfrun.perfcollector <> - SEP tool path: /opt/intel/oneapi/vtune/2024.3/bin64/sep
+336 [138326646754176] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+336 [138326646754176] INFO perfrun.launcher <> - create file finder object
+336 [138326646754176] INFO perfrun.launcher <> - create a result directory: pattern = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc pid = 4294967295
+339 [138326646754176] INFO perfrun.sdk <> - checked that the directory /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc is a local directory
+339 [138326646754176] INFO perfrun.sdk <> - the directory /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc is a local directory with FS type ID 61267
+340 [138326646754176] INFO perfrun.launcher <> - create data directory = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0
+340 [138326646754176] INFO perfrun.launcher <> - Creating the master collection flag
+343 [138326646754176] INFO perfrun.launcher <> - Done creating the master collection flag
+345 [138326491260480] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+345 [138326491260480] INFO perfrun.system <> - online nodes : 0
+345 [138326491260480] INFO perfrun.system <> - nodes with cpus : 0
+345 [138326491260480] INFO perfrun.system <> - nodes with memory : 0
+347 [138326491260480] INFO perfrun.sdk <> - Allocating TMU :/home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/systemcollector-25135-tanmay08.sc
+348 [138326491260480] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+365 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+366 [138326491260480] INFO perfrun.mrte <> - system-wide mode is 0
+366 [138326491260480] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+380 [138326491260480] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0
+381 [138326491260480] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=tanmay08
+381 [138326491260480] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/vtune/2024.3/lib32/runtime:/opt/intel/oneapi/vtune/2024.3/lib64/runtime
+381 [138326491260480] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/opt/intel/oneapi/vtune/2024.3/lib32/runtime:/opt/intel/oneapi/vtune/2024.3/lib64/runtime
+381 [138326491260480] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+381 [138326491260480] INFO perfrun.mrte <> - CORECLR_PROFILER={AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+381 [138326491260480] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=/opt/intel/oneapi/vtune/2024.3/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+381 [138326491260480] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+381 [138326491260480] INFO perfrun.mrte <> - Data directory: /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0
+381 [138326491260480] INFO perfrun.mrte <> - Mrte plugin is initialized
+381 [138326491260480] INFO perfrun.launcher <> - plugin [emon] was disabled because it doesn't support the given collection type.
+381 [138326491260480] INFO perfrun.launcher <> - plugin [cuscol] was disabled because it doesn't support the given collection type.
+381 [138326491260480] INFO perfrun.launcher <> - plugin [stdsrc] was disabled because it doesn't support the given collection type.
+381 [138326491260480] INFO perfrun.sdk <> - runCmd: /opt/intel/oneapi/vtune/2024.3/bin64/sep -dry-run -ec CPU_CLK_UNHALTED.THREAD:sa=3100000,CPU_CLK_UNHALTED.REF_TSC:sample:sa=3100000,INST_RETIRED.ANY:sample:sa=3100000,CPU_CLK_UNHALTED.DISTRIBUTED:sa=3100000,CPU_CLK_UNHALTED.THREAD_P,EXE_ACTIVITY.BOUND_ON_LOADS,FRONTEND_RETIRED.LATENCY_GE_4,INT_MISC.UOP_DROPPING,MEMORY_ACTIVITY.STALLS_L1D_MISS,MEMORY_ACTIVITY.STALLS_L2_MISS,MEMORY_ACTIVITY.STALLS_L3_MISS,MEM_LOAD_RETIRED.L1_HIT,MEM_LOAD_RETIRED.L2_HIT,MEM_LOAD_RETIRED.L3_HIT,MEM_LOAD_RETIRED.L3_MISS,TOPDOWN.BACKEND_BOUND_SLOTS,TOPDOWN.MEMORY_BOUND_SLOTS,TOPDOWN.SLOTS:perf_metrics,UOPS_RETIRED.SLOTS:sa=2000003,MEM_INST_RETIRED.ALL_STORES:sa=100003,MEM_INST_RETIRED.ALL_LOADS:sa=100003,FP_ARITH_INST_RETIRED.SCALAR_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.SCALAR_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_DOUBLE:sa=2000003,UOPS_EXECUTED.X87:sa=2000003,UOPS_EXECUTED.THREAD:sa=2000003,UNC_M_CAS_COUNT_RD,UNC_M_CAS_COUNT_WR -experimental
+382 [138326491260480] INFO perfrun.sdk <> - runCmd started PID 25140
+513 [138326491260480] INFO perfrun.launcher <> - plugin [vtsspp] was disabled because it doesn't support the given collection type.
+513 [138326491260480] INFO perfrun.launcher <> - plugin [perf] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [aoclprofile] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.tpss <> - initialize tpss controller
+514 [138326491260480] INFO perfrun.launcher <> - plugin [tpss] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [media] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [parallelfs] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [power] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [ipmwatch] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [os_counters] was disabled because it doesn't support the given collection type.
+514 [138326491260480] INFO perfrun.launcher <> - plugin [l0_metrics] was disabled because it doesn't support the given collection type.
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/vtune/2024.3/lib32/runtime:/opt/intel/oneapi/vtune/2024.3/lib64/runtime
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/oneapi/vtune/2024.3/lib32/runtime/libittnotify_collector.so
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/oneapi/vtune/2024.3/lib64/runtime/libittnotify_collector.so
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/oneapi/vtune/2024.3/lib32/runtime/libittnotify_collector.so
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/oneapi/vtune/2024.3/lib64/runtime/libittnotify_collector.so
+514 [138326646754176] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /opt/intel/oneapi/vtune/2024.3/lib32/runtime/libittnotify_collector.so:/opt/intel/oneapi/vtune/2024.3/lib64/runtime/libittnotify_collector.so
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: CCL_ITT_LEVEL = 1
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = tanmay08
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:amplxe_samplingmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/vtune/2024.3/lib32/runtime:/opt/intel/oneapi/vtune/2024.3/lib64/runtime
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/vtune/2024.3/lib32/runtime:/opt/intel/oneapi/vtune/2024.3/lib64/runtime
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {AA5E4821-E3B1-479c-B7FF-5AD047D22CED}
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = /opt/intel/oneapi/vtune/2024.3/lib64/libamplxe_samplingmrte_clrprof_1.0.so
+515 [138326646754176] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+515 [138326646754176] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+516 [138326646754176] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/main
+516 [138326646754176] INFO perfrun.launcher <> - Launcher: command line to start after modification = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/main
+516 [138326646754176] INFO perfrun.launcher <> - ProcessCreator object was created
+517 [138326646754176] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+518 [138326491260480] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+518 [138326491260480] INFO perfrun.launcher <> - Messenger::say: Peak bandwidth measurement started.
+5125 [138326491260480] INFO perfrun.launcher <> - Messenger::say: Peak bandwidth measurement finished.
+5127 [138326491260480] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied [system:13]: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+5127 [138326491260480] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+5129 [138326491260480] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:205
+5130 [138326491260480] WARN perfrun.system <> - Could not start ContainerMapping collector, at file: vcs/perfrun1/plugins/system/src/controller.cpp:450
+5320 [138326491260480] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/vtune/2024.3/bin32/amplxe-runss -dump-vdso -r /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc --tmp-dir /tmp/amplxe-tmp-devquest' returned 0
+5839 [138326491260480] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/vtune/2024.3/bin64/amplxe-runss -dump-vdso -r /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc --tmp-dir /tmp/amplxe-tmp-devquest' returned 0
+5839 [138326491260480] INFO perfrun.itt <> - start itt controller for pid #25144
+6151 [138326491260480] INFO perfrun.sdk <> - Allocating TMU :/home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/gen_metrics0.0.2.0.0.oa.0.cfg
+6151 [138326491260480] INFO perfrun.sdk <> - De-allocating TMU: /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/gen_metrics0.0.2.0.0.oa.0.cfg
+6151 [138324974982720] INFO perfrun.sdk <> - Allocating TMU :/home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/gen_metrics0.0.2.0.0.oa.0.vtss
+6151 [138326491260480] INFO perfrun.sdk <> - Reading value (1) from file: /proc/sys/kernel/nmi_watchdog
+6152 [138326491260480] WARN perfrun.launcher <> - Messenger::say: To enable hardware event-based sampling, VTune Profiler has disabled the NMI watchdog timer. The watchdog timer will be re-enabled after collection completes.
+6152 [138324974982720] INFO perfrun.gpu <> - Open stream for subdevice 0
+6152 [138326491260480] INFO perfrun.sdk <> - runCmd: /opt/intel/oneapi/vtune/2024.3/bin64/sep -start -experimental -uem timer=10 -em factor=5 -p-state trigger=CPU_CLK_UNHALTED.REF_TSC -out "/home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/sep7dcea55fe640.20240922T224429.271156" -ec INST_RETIRED.ANY:sample:sa=3100000,CPU_CLK_UNHALTED.THREAD:sa=3100000,CPU_CLK_UNHALTED.REF_TSC:sample:sa=3100000,TOPDOWN.SLOTS:perf_metrics,MEMORY_ACTIVITY.STALLS_L1D_MISS,MEMORY_ACTIVITY.STALLS_L2_MISS,MEMORY_ACTIVITY.STALLS_L3_MISS,MEM_LOAD_RETIRED.L1_HIT,CPU_CLK_UNHALTED.DISTRIBUTED:sa=3100000,CPU_CLK_UNHALTED.THREAD_P,EXE_ACTIVITY.BOUND_ON_LOADS,FRONTEND_RETIRED.LATENCY_GE_4,MEM_LOAD_RETIRED.L2_HIT,MEM_LOAD_RETIRED.L3_HIT,MEM_LOAD_RETIRED.L3_MISS,MEM_INST_RETIRED.ALL_STORES:sa=100003,INT_MISC.UOP_DROPPING,TOPDOWN.BACKEND_BOUND_SLOTS,TOPDOWN.MEMORY_BOUND_SLOTS,UOPS_RETIRED.SLOTS:sa=2000003,MEM_INST_RETIRED.ALL_LOADS:sa=100003,FP_ARITH_INST_RETIRED.SCALAR_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_SINGLE:sa=2000003,FP_ARITH_INST_RETIRED.SCALAR_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.128B_PACKED_DOUBLE:sa=2000003,FP_ARITH_INST_RETIRED.256B_PACKED_DOUBLE:sa=2000003,UOPS_EXECUTED.X87:sa=2000003,UOPS_EXECUTED.THREAD:sa=2000003,UNC_M_CAS_COUNT_RD,UNC_M_CAS_COUNT_WR, -d 0 -uem factor=10
+6153 [138326491260480] INFO perfrun.sdk <> - runCmd started PID 25215
+6653 [138326646754176] INFO perfrun.launcher <> - Launcher: all plugins were started
+6654 [138326646754176] INFO perfrun.launcher <> - DirectoryMonitor object was created
+6654 [138326646754176] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+6654 [138326646754176] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+6654 [138326646754176] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+6654 [138326646754176] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+6661 [138326646754176] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+6662 [138324966590016] INFO perfrun.ptrace <> - New image loaded: pid = 25144 image = /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/main
+6705 [138326344459840] INFO perfrun.ptrace <> - New process created: pid = 25242
+6726 [138324966590016] INFO perfrun.ptrace <> - New image loaded: pid = 25242 image = /usr/bin/orted
+28900 [138326646754176] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+28913 [138326491260480] INFO perfrun.itt <> - detach itt controller
+28913 [138326491260480] INFO perfrun.itt <> - detach itt controller done
+28918 [138326491260480] INFO perfrun.gpu <> - Waiting for data collection thread to finish
+28923 [138324974982720] INFO perfrun.sdk <> - De-allocating TMU: /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/gen_metrics0.0.2.0.0.oa.0.vtss
+28924 [138326491260480] INFO perfrun.gpu <> - Data collection thread finished, shutting down the session
+28924 [138326491260480] INFO perfrun.sdk <> - runCmd: /opt/intel/oneapi/vtune/2024.3/bin64/sep -stop
+28927 [138326491260480] INFO perfrun.sdk <> - runCmd started PID 25404
+31951 [138326491260480] INFO perfrun.sepdk <> - Sampling successfully stopped.
+
+31951 [138326491260480] INFO perfrun.sepdk <> - Waiting for main SEP process (25215) to finish...
+32051 [138326491260480] INFO perfrun.sepdk <> - Main SEP process finished
+32051 [138326491260480] INFO perfrun.sdk <> - Reading value (0) from file: /proc/sys/dev/i915/perf_stream_paranoid
+32052 [138326491260480] INFO perfrun.sdk <> - De-allocating TMU: /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/systemcollector-25135-tanmay08.sc
+32052 [138326491260480] INFO perfrun.system <> - closed the system trace file: /home/tanmay08/Desktop/PC/Study/CA/Lab/Ass4/Matrix mutli/r001hpc/data.0/systemcollector-25135-tanmay08.sc
+32052 [138326646754176] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+32052 [138326646754176] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+32052 [138326646754176] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+32052 [138326646754176] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+32052 [138326646754176] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+32053 [138326646754176] INFO perfrun.launcher <> - Application exit code: 0
+32053 [138326646754176] INFO perfrun.launcher <> - Exit code: 0

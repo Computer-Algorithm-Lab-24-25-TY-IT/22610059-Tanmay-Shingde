@@ -1,0 +1,21 @@
+
+		   OS Processor <-> Physical/Logical Mapping
+		   -----------------------------------------
+	  OS Processor	  Phys. Package	      Core	Logical Processor	Core Type		Core Arch
+		0		0		0		0		P-core		Golden Cove
+		1		0		0		1		P-core		Golden Cove
+		2		0		4		0		P-core		Golden Cove
+		3		0		4		1		P-core		Golden Cove
+		4		0		8		0		P-core		Golden Cove
+		5		0		8		1		P-core		Golden Cove
+		6		0		12		0		P-core		Golden Cove
+		7		0		12		1		P-core		Golden Cove
+		8		0		16		0		E-core		Gracemont
+		9		0		17		0		E-core		Gracemont
+		10		0		18		0		E-core		Gracemont
+		11		0		19		0		E-core		Gracemont
+		12		0		20		0		E-core		Gracemont
+		13		0		21		0		E-core		Gracemont
+		14		0		22		0		E-core		Gracemont
+		15		0		23		0		E-core		Gracemont
+		   -----------------------------------------
