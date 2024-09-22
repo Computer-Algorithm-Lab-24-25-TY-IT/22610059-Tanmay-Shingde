@@ -17,7 +17,7 @@ int fib(int n)
 int main()
 {
     int n;
-    n = 32;
+    n = 42;
 
     int ans = fib(n);
 
